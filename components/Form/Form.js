@@ -161,7 +161,7 @@ export default function MyForm({ basket }) {
             <form className={styles.form} onSubmit={handleSubmit}>
                 <div className="flex space-x-4"> {/* Гнучкий контейнер для розміщення двох імпутів в ряду */}
                     <label className={styles.label}>
-                        Ім'я:
+                        Імя:
                         <input
                             type="text"
                             name="firstName"
