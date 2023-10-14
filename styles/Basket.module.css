@@ -1,0 +1,143 @@
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: none;
+    padding: 10px;
+    box-shadow: 0 5px 10px #ccc;
+    border-radius: 5px;
+    min-height: 120px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.product:hover {
+    box-shadow: 0px 5px 10px #2ECC71,
+        0px 0px 10px #2ECC71;
+}
+
+.productImgTitle {
+    display: flex;
+    flex: 3;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    font-size: 1.2em;
+    width: 100%;
+}
+
+.price {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.amount {
+    width: 40px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.amountBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price .amountBlock button {
+    position: relative;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 1.6em;
+    font-weight: 500;
+    width: 30px;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 50%;
+}
+
+.price .amountBlock button:enabled:hover {
+    background: #ccc;
+}
+
+.price .amountBlock span {
+    margin: 0 3px;
+}
+
+.price .amountBlock button:enabled:active {
+    box-shadow: 0 0 10px #ccc,
+        0 0 30px #ccc,
+        0 0 70px #ccc,
+        0 0 150px #ccc;
+    opacity: 1;
+}
+
+.price span {
+    font-size: 1.3em;
+}
+
+.summ {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 1.4em;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 33vh;
+    gap: 20px;
+}
+
+.message div {
+    font-size: 1.5em;
+}
+
+@media (max-width: 800px) {
+
+    .product:hover,
+    .product:focus {
+        box-shadow: 0 5px 10px #ccc;
+    }
+
+    .product {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .price .amountBlock button:enabled:hover {
+        background: none;
+    }
+
+    .price .amountBlock button:enabled:active {
+        background: #ccc;
+        box-shadow: 0 0 10px #ccc,
+            0 0 30px #ccc,
+            0 0 70px #ccc,
+            0 0 150px #ccc;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 460px) {
+    .summ {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}

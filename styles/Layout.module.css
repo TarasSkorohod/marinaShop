@@ -1,0 +1,179 @@
+.navigation {
+    position: fixed;
+    background: #86efac;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.navigation a {
+    margin-left: 10px;
+    transition: 0.25s;
+}
+
+.catalogLink {
+    display: flex;
+    align-items: center;
+}
+
+.navigation a.active {
+    font-size: 1.3em;
+    font-weight: 500;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+}
+
+.container {
+    min-height: 33vh;
+}
+
+.nameShop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    pointer-events: none;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 70px auto;
+    text-align: center;
+    max-width: 940px;
+    padding: 0 20px;
+}
+
+.basket {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.count {
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    width: 24px;
+    font-size: 16px;
+    height: 24px;
+    background: #2ECC71;
+    border-radius: 50%;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: none;
+    animation: fontSize 0.5s ease-in;
+}
+
+@keyframes fontSize {
+    0% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-around;
+    background: #ccc;
+    min-height: 350px;
+    box-shadow: 0 -3px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.contactsBlock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.copy {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.footer span {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.footer ul {
+    margin-top: 15px;
+}
+
+.footer li {
+    padding-left: 0px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.footer li:hover {
+    font-weight: 600;
+}
+
+
+@media (max-width: 900px) {
+    .container {
+        margin: 70px auto;
+    }
+
+    .navigation {
+        padding: 30px 20px 30px 10px;
+    }
+
+    .footer div:nth-child(1) {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 660px) {
+    .nameShop {
+        display: none;
+    }
+
+    .footer {
+        padding: 30px 0px
+    }
+
+    .footer div:nth-child(1) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contacts {
+        flex-direction: column;
+        gap: 0;
+    }
+
+}

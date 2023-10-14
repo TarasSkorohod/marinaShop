@@ -1,0 +1,135 @@
+:root {
+  --star-size: 40px;
+  --star-color: #ccc;
+  --star-background: #fc0;
+  --success: #2ecc71;
+  --remove: #e26868;
+  --normal: #7c7cf8;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  opacity: 0.9;
+  transition: 0.25s;
+}
+
+.btn.success {
+  background: var(--success);
+}
+
+.btn.remove {
+  background: var(--remove);
+}
+
+.btn.normal {
+  background: var(--normal);
+}
+
+.btn.success:hover {
+  opacity: 1;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px var(--success);
+}
+
+.btn.remove:hover {
+  opacity: 1;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px var(--remove);
+}
+
+.btn.normal:hover {
+  opacity: 1;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px var(--normal);
+}
+
+.btn.success:active {
+  box-shadow: 0 0 15px var(--success), 0 0 35px var(--success), 0 0 75px var(--success);
+}
+
+.btn.remove:active {
+  box-shadow: 0 0 15px var(--remove), 0 0 35px var(--remove), 0 0 75px var(--remove);
+}
+
+.btn.normal:active {
+  box-shadow: 0 0 15px var(--normal), 0 0 35px var(--normal), 0 0 75px var(--normal);
+}
+
+
+@media (max-width: 800px) {
+  .btn.success:hover {
+    opacity: 1;
+    letter-spacing: 0px;
+    box-shadow: none;
+  }
+
+  .btn.remove:hover {
+    opacity: 1;
+    letter-spacing: 0px;
+    box-shadow: none;
+  }
+
+  .btn.normal:hover {
+    opacity: 1;
+    letter-spacing: 0px;
+    box-shadow: none;
+  }
+
+  .btn.success:active {
+    letter-spacing: 1px;
+    box-shadow: 0 0 15px var(--success), 0 0 35px var(--success), 0 0 75px var(--success);
+  }
+
+  .btn.remove:active {
+    letter-spacing: 1px;
+    box-shadow: 0 0 15px var(--remove), 0 0 35px var(--remove), 0 0 75px var(--remove);
+  }
+
+  .btn.normal:active {
+    letter-spacing: 1px;
+    box-shadow: 0 0 15px var(--normal), 0 0 35px var(--normal), 0 0 75px var(--normal);
+  }
+}
+
+
+input {
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
