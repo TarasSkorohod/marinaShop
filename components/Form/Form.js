@@ -159,7 +159,7 @@ export default function MyForm({ basket }) {
         <div className="flex flex-col items-center justify-center">
 
             <form className={styles.form} onSubmit={handleSubmit}>
-                <div className="flex space-x-4"> {/* Гнучкий контейнер для розміщення двох імпутів в ряду */}
+                <div className="flex space-x-4">
                     <label className={styles.label}>
                         Імя:
                         <input
